@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	background-color: darkgray;
+	background-image: url("images/ui.background.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	user-select: none;
+}
+#title {
+	position: absolute;
+	left: 50vw;
+	top: 25vh;
+	animation: title 10s infinite;
+}
+@keyframes title {
+	from, to, 50% {
+		transform: translate(-50%, 0);
+		filter: hue-rotate(0);
+	}
+	25%, 75% {
+		transform: translate(-50%, 0) scale(1.2) rotateZ(2.5deg);
+		filter: hue-rotate(360deg);
+	}
+	50% {
+		transform: translate(-50%, 0) rotateX(-30deg) rotateZ(5deg);
+	}
+}

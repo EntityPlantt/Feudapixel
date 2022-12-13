@@ -1,7 +1,7 @@
 {
   "name": "Feudapixel",
   "version": "1.0.0",
-  "description": "Decorate your territory as you conquer other's territories",
+  "description": "Decorate your territory as you conquer others' territories",
   "main": "app.js",
   "scripts": {
     "test": "electron .",
