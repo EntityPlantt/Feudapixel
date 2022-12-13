@@ -1,0 +1,27 @@
+{
+  "name": "Feudapixel",
+  "version": "1.0.0",
+  "description": "Decorate your territory as you conquer other's territories",
+  "main": "app.js",
+  "scripts": {
+    "test": "electron .",
+    "package": "electron-packager . 'Feudapixel' --icon='lib/images/icon.ico'"
+  },
+  "keywords": [
+    "html5",
+    "html",
+    "game",
+    "html5game",
+    "canvas",
+    "threejs",
+    "js",
+    "javascript"
+  ],
+  "author": "EntityPlantt",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-packager": "^17.1.1",
+    "electron-winstaller": "^5.1.0"
+  }
+}
