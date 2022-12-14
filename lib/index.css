@@ -1,3 +1,27 @@
+@font-face {
+	font-family: Kanit;
+	src: url("font/Kanit-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Kanit;
+	src: url("font/Kanit-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Kanit;
+	src: url("font/Kanit-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: Kanit;
+	src: url("font/Kanit-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
 body {
 	margin: 0;
 	background-color: darkgray;
@@ -6,6 +30,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	user-select: none;
+	font: 20px Kanit;
 }
 #title {
 	position: absolute;
@@ -25,4 +50,17 @@ body {
 	50% {
 		transform: translate(-50%, 0) rotateX(-30deg) rotateZ(5deg);
 	}
+}
+#main-menu {
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%, -50%);
+}
+#main-menu td {
+	background: #fff4;
+	color: white;
+	padding: 10px 17.5px;
+	text-align: center;
+	cursor: pointer;
 }

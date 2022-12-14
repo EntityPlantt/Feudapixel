@@ -5,11 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Feudapixel</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/icon.ico">
 </head>
 <body>
 	<img ondragstart="return false" src="images/title.png" id="title">
-	<ul id="main-menu">
-		<li onclick="Sound.play('ui.click'); selectWorld()">Select world</li>
-	</ul>
+	<table id="main-menu">
+		<tr>
+			<td onclick="Sound.play('ui.click'); UI.selectWorld()" colspan="2">Select world</td>
+		</tr>
+		<tr>
+			<td onclick="Sound.play('ui.click'); UI.credits()">Credits</td>
+			<td onclick="Sound.play('ui.click'); window.close()">Quit</td>
+		</tr>
+	</table>
 </body>
 </html>
