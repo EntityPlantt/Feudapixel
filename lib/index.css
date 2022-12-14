@@ -1,3 +1,7 @@
+:root {
+	--theme: #fdb900;
+	--ui-bg: #0008;
+}
 @font-face {
 	font-family: Kanit;
 	src: url("font/Kanit-Regular.ttf") format("truetype");
@@ -24,13 +28,14 @@
 }
 body {
 	margin: 0;
-	background-color: darkgray;
+	background-color: var(--theme);
 	background-image: url("images/ui.background.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	user-select: none;
 	font: 20px Kanit;
+	color: white;
 }
 #title {
 	position: absolute;
@@ -59,8 +64,30 @@ body {
 }
 #main-menu td {
 	background: #fff4;
-	color: white;
 	padding: 10px 17.5px;
 	text-align: center;
 	cursor: pointer;
+}
+[ui] {
+	background: var(--theme);
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	animation: fromOpacity0 1s 1;
+}
+[ui-bg] {
+	background: var(--ui-bg);
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	animation: fromOpacity0 1s 1;
+}
+@keyframes fromOpacity0 {
+	from {
+		opacity: 0;
+	}
 }
