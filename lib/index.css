@@ -91,3 +91,12 @@ body {
 		opacity: 0;
 	}
 }
+.keybind {
+	display: inline-block;
+	padding: 0 5px;
+	background: #0008;
+	margin-left: 5px;
+}
+.keybind:hover {
+	background: #000a;
+}
